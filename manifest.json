@@ -1,0 +1,40 @@
+{
+    "name": "Data Connector for Power BI",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "auth": {
+        "redirect_urls": [
+            "https://your-app-domain.com/auth/callback"
+        ]
+    },
+    "webhooks": {
+        "api_version": "2023-10"
+    },
+    "scopes": [
+        "read_products",
+        "read_orders",
+        "read_customers",
+        "read_inventory",
+        "read_fulfillments",
+        "read_shipping",
+        "read_analytics"
+    ],
+    "extension_blocks": [],
+    "embedded": true,
+    "pos": {
+        "embedded": false
+    },
+    "access_scopes": {
+        "api": false,
+        "admin": true,
+        "public": false
+    },
+    "app_url": "https://your-app-domain.com",
+    "build_stack": "nodejs",
+    "runtime_context": "strict",
+    "app_proxy": {
+        "url": "https://your-app-domain.com/proxy",
+        "subpath": "data-connector",
+        "prefix": "apps"
+    }
+}
